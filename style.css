@@ -1,0 +1,123 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: EtelkaNarrowTextPro;
+  src: url(EtelkaNarrowTextPro.woff);
+}
+
+@font-face {
+  font-family: EtelkaTextPro;
+  src: url(EtelkaTextPro.woff);
+}
+
+@font-face {
+  font-family: EtelkaTextProBold;
+  src: url(EtelkaTextProBold.woff);
+}
+
+.box-container {
+  background: white;
+  width: 553px;
+  height: 287px;
+  padding: 55px 51px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.btn {
+  order: 3;
+  position: relative;
+  outline: none;
+  border: none;
+  width: 194px;
+  height: 70px;
+  border-radius: 6px;
+  background: #8d8a00;
+  margin-left: 59px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: #a3a000;
+}
+
+.btn:before {
+  content: 'В корзину';
+  color: white;
+  font-size: 26px;
+  font-family: 'EtelkaNarrowTextPro';
+  position: relative;
+  left: 17px;
+  top: -1px;
+  letter-spacing: 0.8px;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 27px;
+  background-image: url(icon_cart.png);
+  background-size: cover;
+  width: 24px;
+  height: 25px;
+}
+
+.favorite {
+  order: 4;
+  outline: none;
+  border: none;
+  background: white;
+  width: 53px;
+  height: 51px;
+  margin-bottom: 10px;
+  background-image: url(icon_heart1.png);
+  background-size: 31px 31px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.3s;
+}
+
+.favorite:hover {
+  cursor: pointer;
+  background-image: url(icon_heart2.png);
+}
+
+.price {
+  order: 2;
+  font-size: 30px;
+  font-family: 'EtelkaTextProBold';
+  line-height: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.price span {
+  text-decoration: line-through;
+  color: #666666;
+  font-size: 28px;
+  line-height: 28px;
+  margin-top: 14px;
+  font-family: 'EtelkaTextPro';
+  letter-spacing: -1px;
+  display: inline-block;
+}
+
+.title {
+   order: 1;
+   font-size: 28px;
+   font-family: 'EtelkaTextPro';
+   letter-spacing: 0px;
+   line-height: 32px;
+   margin-bottom: 42px;
+}
+
